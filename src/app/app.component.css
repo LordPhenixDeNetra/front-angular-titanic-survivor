@@ -1,0 +1,15 @@
+.n-text-logo {
+  font-size: 1.3em;
+  display: block;
+  margin-left: 8px;
+  border: solid 2px;
+  padding: 6px;
+  border-radius: 16px;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.52), -6px -6px 8px rgba(166, 166, 166, 0.09);
+  user-select: none;
+  cursor: pointer;
+}
+
+.n-text-logo:hover {
+  box-shadow: inset 6px 6px 8px rgba(51, 51, 51, 0.52), inset -6px -6px 8px rgba(166, 166, 166, 0.09);
+}

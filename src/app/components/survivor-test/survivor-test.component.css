@@ -1,0 +1,113 @@
+.n-t-container{
+  width: 90vw;
+  height: 90vh;
+
+  /*border: solid #1976d2;*/
+}
+
+.n-form-container{
+  width: 100%;
+  height: 100%;
+  /*border: solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.n-form{
+  width: 50%;
+  height: 40%;
+  border: solid #ababab 1px;
+  border-radius: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.52), -6px -6px 8px rgba(166, 166, 166, 0.6);
+}
+
+.n-input-container{
+  /*width: 100%;*/
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border: solid yellow;*/
+  gap: 10px;
+}
+
+.n-input{
+  color: blue;
+  height: 30px;
+  width: 170px;
+  border: solid 1px;
+  border-radius: 12px;
+  padding: 4px;
+  font-size: 1.2em;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.28), -6px -6px 8px rgba(166, 166, 166, 0.27);
+
+}
+
+.n-input::placeholder{
+  color: blue;
+}
+
+.n-select{
+  color: blue;
+  height: 38px;
+  width: 170px;
+  border: solid 1px;
+  border-radius: 12px;
+  padding: 6px;
+  font-size: 1.2em;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.28), -6px -6px 8px rgba(166, 166, 166, 0.27);
+}
+
+.n-submit-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.n-submit{
+  width: 94%;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2em;
+  background: dodgerblue;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.24), -6px -6px 8px rgba(166, 166, 166, 0.29);
+}
+
+.n-survie{
+  /*width: 94%;*/
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2em;
+  background: #61fc2f;
+  color: #232323;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.52), -6px -6px 8px rgba(166, 166, 166, 0.6);
+}
+
+.n-non-survie{
+  /*width: 94%;*/
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  font-size: 1.2em;
+  background: #ff1e1e;
+  color: #ffffff;
+  text-align: center;
+  padding-left: 12px;
+  padding-right: 12px;
+  padding-top: 12px;
+  box-shadow: 6px 6px 8px rgba(51, 51, 51, 0.52), -6px -6px 8px rgba(166, 166, 166, 0.6);
+}

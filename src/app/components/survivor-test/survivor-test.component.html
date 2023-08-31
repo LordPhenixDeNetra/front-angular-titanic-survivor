@@ -1,0 +1,29 @@
+<div class="n-t-container">
+  <div class="n-form-container">
+    <form class="n-form" [formGroup]="survivorFormGroup" (ngSubmit)="handleSurvie()">
+      <div class="n-input-container">
+<!--        <input type="text"   placeholder="Classe">-->
+        <select class="n-select" id="n-select-pclass" formControlName="pclass">
+          <option value="">Class</option>
+          <option [value]="1" >Premier Classe</option>
+          <option [value]="2">Deuxième Classe</option>
+          <option [value]="3">Troisième Classe</option>
+        </select>
+        <select class="n-select" id="n-select-sex" formControlName="sex" >
+          <option value="">Sex</option>
+          <option [value]="0" selected >Femme</option>
+          <option [value]="1">Homme</option>
+        </select>
+        <input type="number" [min]="1" [max]="150" class="n-input" id="n-input-age" formControlName="age" placeholder="Age">
+      </div>
+      <div class="n-submit-container">
+        <button class="n-submit" type="submit">VERIFY</button>
+      </div>
+    </form>
+    <div *ngIf="survieMessage!=''" class="n-survie-message">
+      <p *ngIf="survieMessage!='' && survieMessage == messages[0]" class="n-survie" > {{survieMessage}}</p>
+      <p *ngIf="survieMessage!='' && survieMessage == messages[1]" class="n-non-survie" > {{survieMessage}}</p>
+    </div>
+
+  </div>
+</div>
